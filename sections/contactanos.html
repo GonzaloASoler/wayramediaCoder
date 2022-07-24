@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayra - Contactanos</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navTexto">
+            <ul class="ulnavTexto">
+                <li class="linavTexto">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./quehacemos.html">¿Qué Hacemos?</a>
+                </li>
+                <li>
+                    <a href="./proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a class="active" href="./contactanos.html">Contactanos</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navSoloiconos">
+            <ul class="ulnavSoloiconos">
+                <li class="linavSoloiconos">
+                    <a href="../index.html"><img src="../images/icon-inicio.svg" alt="Inicio"></a>
+                </li>
+                <li>
+                    <a href="./nosotros.html"><img src="../images/icon-nosotros.svg" alt="Nosotros"></a>
+                </li>
+                <li>
+                    <a href="../sections/quehacemos.html"><img src="../images/icon-quehacemos.svg" alt="¿Qué hacemos?"></a>
+                </li>
+                <li>
+                    <a href="../sections/proyectos.html"><img src="../images/icon-proyectos.svg" alt="Proyectos"></a>
+                </li>
+                <li>
+                    <a class="active" href="../sections/contactanos.html"><img src="../images/icon-contactanos.svg" alt="Contactanos"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <form class="formContacto">
+                    <div class="cajaFormulario">
+                        <article class="formularioCampo">
+                            <label class="itemLabel" for="Nombre">Tu Nombre:</label>
+                            <input class="itemLabelCampo" type="text" placeholder="Nombre y Apellido" name="Nombre">
+                            <label class="itemLabel" for="email">Tu Correo:</label>
+                                <input class="itemLabelCampo" type="text" placeholder="tucorreo@mail.com" name="email">
+                        </article>
+                    </div>
+                    <div class="bordeseccionesformulario">
+                        <p class="formSoloTexto">¿Qué necesitás que contemos por vos?</p>
+                        <div class="cajaBotonRedondo">
+                                <div class="botonredondo">Un Evento
+                                    <input type="radio" name="quecontar" value="evento">
+                                </div>
+                                <div>Un Proyecto
+                                    <input type="radio" name="quecontar" value="proyecto">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="bordeseccionesformulario">
+                        <p class="formSoloTexto">Si es un Evento:</p>
+                        <div class="labelunalinea">
+                            <label class="itemLabel" for="Fecha">Contanos la fecha</label>
+                            <input class="itemLabelCampo" type="text" placeholder="dd/mm/aaaa" name="Fecha">
+                        </div>
+                    </div>
+                    <div class="bordeseccionesformulario">
+                        <p class="formSoloTexto">Si es un proyecto:</p>
+                        <div class="labelunalinea">
+                            <label class="itemLabel" for="Nombre_Proyecto">Decinos el nombre:</label>
+                            <input class="itemLabelCampo" type="text" name="Nombre_Proyecto" placeholder="Proyecto">
+                        </div>
+                        <p class="formSoloTexto">¿Qué tipo de proyecto es?</p>
+                        <div class="desplegableproyecto">
+                            <select name="Tipo_Proyecto" class="tipoProyecto">
+                                <option value="Retail">Local de Reventa</option>
+                                <option value="E-Commerce">E-Commerce</option>
+                                <option value="Fabrica">Fabricación de Productos</option>
+                                <option value="Fab-Retail">Local de Venta de Productos Propios</option>
+                                <option value="Fab-Ecommerce">E-Commerce Productos Propios</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label class="formSoloTexto" for="Observaciones">Observaciones:</label> 
+                            <textarea class="observaciones" type="Text" placeholder="Observaciones" name="Observaciones"></textarea>
+                    <div class="checkbox">
+                        <p class="formSoloTexto">Contactarme por teléfono</p>
+                        <input class="checkboxCSS" type="checkbox" name="acepta" value="1">
+                    </div>
+                    <div class="botonesenviar">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                    </div>
+                    
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">Wayra Media - 2022</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/wayramedia/" target="_blank"><img class="icon" src="../images/icon-instagram.svg" alt="link a instagram"></a>
+            <a href="https://vimeo.com/gonzalosoler" target="_blank"><img class="icon" src="../images/icon-vimeo.svg" alt="link a vimeo"></a>
+            <a href="https://www.youtube.com/channel/UCyIvWTYmqKFK9TG6uGz7Ldg/featured" target="_blank"><img class="icon" src="../images/icon-youtube.svg" alt="link a youtube"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
