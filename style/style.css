@@ -69,6 +69,7 @@ li .active{
 
 li a:hover{
     color: rgb(156, 156, 156);
+    transition: color 0.75s;
 }
 
 main.mainIndex{
@@ -416,6 +417,13 @@ footer{
     border-radius: 5px;
 }
 
+.video:hover{
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
 .textoitemgaleria{
     text-align: left;
     font-weight: 400;
@@ -426,6 +434,13 @@ footer{
     margin: auto;
     width: 450px;
     border-radius: 5px;
+}
+
+.foto:hover{
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
 }
 
 .titulovideo{
@@ -567,6 +582,18 @@ footer{
         margin-right: auto;
         margin-top: 10%;
         border-radius: 5px;
+    }
+
+    .foto1Parrafo:hover{
+        transform: scale(1.2);
+        transition-property: all;
+        transition-duration: 500ms;
+    }
+
+    .foto2Parrafo:hover{
+        transform: scale(1.2);
+        transition-property: all;
+        transition-duration: 500ms;
     }
 
     .grillaquehacemos{
