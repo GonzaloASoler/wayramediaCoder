@@ -13,6 +13,35 @@ body{
     flex-direction: column;
 }
 
+/*CSS NAV BOOTSTRAP DESPLEGABLE*/
+
+.navDesplegable{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #bad588;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.offcanvas-body{
+    background-color: #bad588;
+}
+
+.offcanvas-header{
+    color: white;
+    background-color: #abc57b;
+}
+
+.navbar-toggler-icon{
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
 .navTexto{
     display:none;
 }
@@ -80,6 +109,7 @@ main.mainIndex{
 
 section.textoPortada{
     height: 400px;
+    margin-top: 55px;
 }
 
 .textoPortada{
@@ -112,6 +142,33 @@ section.textoPortada p{
 p.textoNegrita{
     font-weight: 700;
     color: rgb(50, 50, 50);
+}
+
+/*GRILLA INDEX*/
+
+.grillaIndex{
+    margin-top: 20px;
+}
+
+.textoimgIndex{
+    color: rgb(50, 50, 50);
+    font-weight: 500;
+
+}
+
+.imagen1Index{
+    opacity: 0.55;
+    filter: grayscale(100%);
+    transition: all .5s ease-in-out;
+}
+
+
+.imagen1Index:hover {
+    filter: none;
+}
+
+.textosobreImagenIndex{
+    font-weight: 600;
 }
 
 /*FOOTER*/
@@ -470,12 +527,21 @@ footer{
 
 @media (min-width: 700px){
     /*CAMBIO DE NAV*/
-    .ulnavSoloiconos{
+    .navbar{
         display: none;
+    }
+
+
+    section.textoPortada{
+        margin-top: 0px;
     }
 
     .navTexto{
         display: inline;
+    }
+
+    ul{
+        margin-bottom: 0px;
     }
     
     .ulnavTexto{
