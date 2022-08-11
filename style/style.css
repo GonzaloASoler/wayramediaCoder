@@ -144,9 +144,9 @@ p.textoNegrita{
     color: rgb(50, 50, 50);
 }
 
-/*GRILLA INDEX*/
+/*CAROUSEL INDEX*/
 
-.grillaIndex{
+.carouselIndex{
     margin-top: 20px;
 }
 
@@ -171,10 +171,17 @@ p.textoNegrita{
     font-weight: 600;
 }
 
+/*GRILLA INDEX*/
+
+.galeriaIndex{
+    display: none;
+}
+
 /*FOOTER*/
 
 footer{
     background-color: #bad588;
+    padding-top: 10px;
     padding-bottom: 60px;
     display: flex;
     flex-direction: row;
@@ -206,13 +213,16 @@ footer{
     display: none;
 }
 
-
 .portadavideosomos{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
     border-radius: 5px;
+}
+
+.portadaQueHacemos{
+    margin-top: 55px;
 }
 
 
@@ -323,6 +333,8 @@ footer{
     background-color: #abc57b;
     width: 555px;
     margin: auto;
+    margin-top: 55px;
+    padding-bottom: 30px;
 }
 
 .cajaFormulario{
@@ -525,12 +537,12 @@ footer{
     "fotos";
 }
 
-@media (min-width: 700px){
+@media (min-width: 576px){
+    
     /*CAMBIO DE NAV*/
     .navbar{
         display: none;
     }
-
 
     section.textoPortada{
         margin-top: 0px;
@@ -578,6 +590,106 @@ footer{
     
     .linavTexto a:hover{
         color: rgb(156, 156, 156);
+    }
+
+    /*CAMBIOS EN MARGIN-TOP*/
+    .portadaQueHacemos{
+        margin-top: 0px;
+    }
+
+    .formContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #abc57b;
+        width: 555px;
+        margin: auto;
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    /*GRILLA INDEX*/
+
+    .carouselIndex{
+        display: none;
+    }
+
+    .galeriaIndex{
+        display: inline-block;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+
+    .contenedorGaleriaIndex{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+
+    .contenedorLink{
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+
+    .imagenIndex {
+        width: 100%;
+        line-height: 0;
+        height: auto;
+        filter: blur(0px);
+        transition: all 0.5s ease-in;
+        transform: scale(1);
+    }
+
+    .contenedorLink:hover .imagenIndex{
+        filter: blur(3px);
+        transform: scale(1.1);
+
+    }
+
+
+    .linkSeccionTexto{
+        position: absolute;
+       /* overflow: hidden;*/
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(50, 50, 50, 0.5);
+        color: white;
+        font-size: 2em;
+        font-weight: 800;
+        text-decoration: none;
+        opacity: 0;
+        transition: opacity 0.5s;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedorLink:hover .linkSeccionTexto{
+        color: white;
+        opacity: 1;
+    }
+
+
+
+
+
+
+@media (min-width: 700px){
+    
+
+
+    /*CAMBIOS EN INDEX*/
+
+    .contenedorGaleriaIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
     }
 
     /*CAMBIO DE PORTADA VIDEO SOMOS EN NOSOTROS*/
@@ -685,6 +797,22 @@ footer{
 }
 
 @media (min-width: 1000px){
+
+    /*index*/
+
+    .imagenIndex{
+        border-radius: 10px;
+        filter: blur(0px);
+    }
+
+    .contenedorGaleriaIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+
+
     /*ESTILOS DE QUE HACEMOS*/
 
     .foto1Parrafo, .foto2Parrafo{
