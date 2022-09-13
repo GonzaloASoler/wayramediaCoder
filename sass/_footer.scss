@@ -1,0 +1,27 @@
+footer{
+    background-color: #bad588;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.copyright{
+    display: inline;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgb(80, 80, 80);
+    font-weight: 600;
+    font-size: 9pt;
+    padding: 10px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.icon{
+    padding: 5px 10px 5px 10px;
+}

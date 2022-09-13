@@ -1,0 +1,100 @@
+
+.mainProyectos {
+    margin-top: 2rem;
+}
+
+.galeriaproyectos{
+    text-align: center;
+    color: #888;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items:center;
+}
+
+.titulogaleria{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    background-image: linear-gradient(to right, #bad588, #4a5c28);
+}
+
+.galeriaitem{
+
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    width: 350px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeriaitem .galevideo{
+    width: 100%;
+}
+
+.galeriaitem .galefoto{
+    height:100%;
+}
+
+.video{
+    margin: auto;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.video:hover{
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.textoitemgaleria{
+    text-align: left;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.foto{
+    margin: auto;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.foto:hover{
+    transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.titulovideo{
+    grid-area: titulovideos;
+}
+
+.galeriavideos{
+    grid-area: videos;
+}
+
+.titulofoto{
+    grid-area: titulofotos;
+}
+
+.galeriafotos{
+    grid-area: fotos;
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas:
+    "titulovideos"
+    "videos"
+    "titulofotos"
+    "fotos";
+}

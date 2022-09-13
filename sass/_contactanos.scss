@@ -1,0 +1,127 @@
+.formContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #abc57b;
+    width: 100%;
+    margin: auto;
+    margin-top: 55px;
+    padding-bottom: 30px;
+}
+
+.cajaFormulario{
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.formularioCampo{
+    display: flex;
+    flex-direction: column;
+}
+
+.itemLabel{
+    padding: 10px 0px 5px 0px;
+    margin: 5px 10px 0px 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.itemLabelCampo{
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+    background-color: #eeffd0;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.formSoloTexto{
+    padding: 5px;
+    margin: 10px 0px 0px 5px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.cajaBotonRedondo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    color: white;
+    font-weight: 500;
+    padding: 0px 0px 10px 0px;
+    margin-bottom: 10px;
+
+    .botonredondo{
+        text-align: center;
+    }
+
+}
+
+.bordeseccionesformulario{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    .labelunalinea{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        font-weight: 500;
+        padding: 0px 0px 10px 0px;
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+.desplegableproyecto{
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    
+    .tipoProyecto{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+    }
+}
+
+.observaciones{
+    width: 454px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #eeffd0;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.checkboxCSS{
+    padding: 5px;
+    margin: 10px 0px 0px 5px;
+}
+
+.botonesenviar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+

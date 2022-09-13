@@ -1,0 +1,55 @@
+@import "fuentes";
+@import "generales";
+@import "variablesGlobal";
+@import "nav";
+@import "index";
+@import "nosotros";
+@import "quehacemos";
+@import "proyectos";
+@import "contactanos";
+@import "footer";
+
+@mixin textobanner-arriba {
+    height: 175px;
+    font-weight: 800;
+    text-align: right;
+    font-size: 20pt;
+    background-image: url(../images/wayraPortada_WEB-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.portadaQueHacemos {
+    @include textobanner-arriba;
+
+}
+
+.portadaNosotros{
+    @include textobanner-arriba;
+}
+
+
+.portadaProyectos{
+    @include textobanner-arriba;
+}
+
+
+/*ESTILOS PROPIOS DE NOSOTROS*/
+
+.videoSomos{
+    display: none;
+}
+
+.portadavideosomos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 5px;
+}
+
+
+@import "mediaq";
+
+

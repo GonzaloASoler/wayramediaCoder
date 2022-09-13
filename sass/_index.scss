@@ -1,0 +1,80 @@
+main.mainIndex{
+    padding: 10px;
+    background-color: rgb(179, 179, 179);
+    
+}
+section.textoPortada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    height: 400px;
+    background-image: url(../images/Wayra\ Portada_WEB-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    border-radius: 15px;
+}
+
+.grillaPortadaIndex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    padding-right: 5%;
+
+}
+
+h1{
+    text-align: right;
+    font-size: 28pt;
+    text-transform: uppercase;
+    line-height: 85%;
+    color: rgb(50, 50, 50);
+}
+
+.portadaLight {
+    text-align: right;
+    font-weight: 200;
+    font-size: 26pt;
+    margin-bottom: 0px;
+    }
+
+p.textoNegrita{
+    font-weight: 700;
+    color: rgb(50, 50, 50);
+}
+
+/*CAROUSEL INDEX*/
+
+.carouselIndex{
+    margin-top: 20px;
+}
+
+.textoimgIndex{
+    color: rgb(50, 50, 50);
+    font-weight: 500;
+
+}
+
+.imagen1Index{
+    opacity: 0.55;
+    filter: grayscale(100%);
+    transition: all .5s ease-in-out;
+}
+
+.imagen1Index:hover {
+    filter: none;
+}
+
+.textosobreImagenIndex{
+    font-weight: 600;
+}
+
+/*GRILLA INDEX*/
+
+.galeriaIndex{
+    display: none;
+}
+
+

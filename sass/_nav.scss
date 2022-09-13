@@ -1,0 +1,60 @@
+/*CSS NAV BOOTSTRAP DESPLEGABLE*/
+
+.navDesplegable{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #bad588;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.offcanvas-body{
+    background-color: #bad588;
+}
+
+.offcanvas-header{
+    color: white;
+    background-color: #abc57b;
+}
+
+.navbar-toggler-icon{
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+.navTexto{
+    display:none;
+}
+
+ul li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    font-size: 10pt;
+    text-transform: uppercase;
+    font-weight: 700;
+    a {
+        text-decoration: none;
+        display: inline-block;
+        color: #ffffff;
+        padding: 10px 30px 10px 30px;
+        border-radius: 3px;
+        text-align: center;
+
+        &:hover{
+            color: rgb(156, 156, 156);
+            transition: color 0.75s;
+        }
+    }
+    
+    .active {
+        background-color: #abc57b;
+        color: #888;
+    }
+
+}

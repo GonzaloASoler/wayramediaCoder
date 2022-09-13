@@ -1,0 +1,471 @@
+@media (min-width: $mq-cellchico){
+    .parrafoSobreFondo2{
+        height: 300px;
+    }
+
+    /*CAMBIOS EN PROYECTOS*/
+
+    .video{
+        width: 100%;
+    }
+
+    .foto{
+        width: 100%;
+    }
+
+}
+
+
+
+@media (min-width: $mq-cell){
+    
+    /*CAMBIO DE NAV*/
+    .navbar{
+        display: none;
+    }
+
+    section.textoPortada{
+        margin-top: 0px;
+    }
+
+    .navTexto {
+        display: inline;
+
+        .ulnavTexto {
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #bad588;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: 500;
+            margin-bottom: 0px;
+
+            .linavTexto {
+                list-style-type: none;
+        
+                font-size: 10pt;
+                text-transform: uppercase;
+                font-weight: 700;
+
+                a {
+                    text-decoration: none;
+                    color: #ffffff;
+                    padding: 10px;
+                    border-radius: 3px;
+                    text-align: center;
+                }
+
+                &:hover {
+                    color: rgb(156, 156, 156);
+
+                }
+
+                .active{
+                    background-color: #abc57b;
+                    color: #888;
+                }
+            }
+
+        }
+
+    }
+    /*CAMBIOS EN NOSOTROS*/
+
+    .parrafoSobreFondo2{
+        height: 250px;
+    }
+
+
+
+    /*CAMBIOS EN MARGIN-TOP*/
+    .portadaQueHacemos{
+        margin-top: 0px;
+    }
+
+    .formContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #abc57b;
+        width: 555px;
+        margin: auto;
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    /*GRILLA INDEX*/
+
+    .carouselIndex{
+        display: none;
+    }
+
+    .galeriaIndex{
+        display: inline-block;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+
+    .contenedorGaleriaIndex{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+    }
+
+    .contenedorLink{
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+
+    .imagenIndex {
+        width: 100%;
+        line-height: 0;
+        height: auto;
+        filter: blur(0px);
+        transition: all 0.5s ease-in;
+        transform: scale(1);
+    }
+
+    .contenedorLink:hover .imagenIndex{
+        filter: blur(3px);
+        transform: scale(1.1);
+
+    }
+
+
+    .linkSeccionTexto{
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(50, 50, 50, 0.5);
+        color: white;
+        font-size: 2em;
+        font-weight: 800;
+        text-decoration: none;
+        opacity: 0;
+        transition: opacity 0.5s;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedorLink:hover .linkSeccionTexto{
+        color: white;
+        opacity: 1;
+    }
+
+    /*CAMBIOS EN CONTACTANOS*/
+
+    .formContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #abc57b;
+        width: 555px;
+        margin: auto;
+        
+        padding-bottom: 30px;
+    }
+
+    .cajaFormulario{
+        padding: 10px;
+        margin: auto;
+        width: 500px;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .formularioCampo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itemLabel{
+        padding: 10px 0px 5px 0px;
+        margin: 5px 10px 0px 10px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .itemLabelCampo{
+        padding: 10px;
+        margin: 0px 10px 0px 10px;
+        background-color: #eeffd0;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .formSoloTexto{
+        padding: 5px;
+        margin: 10px 0px 0px 5px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12pt;
+        font-weight: 600;
+    }
+
+    .cajaBotonRedondo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: white;
+        font-weight: 500;
+        padding: 0px 0px 10px 0px;
+        margin-bottom: 10px;
+
+    }
+
+    .bordeseccionesformulario{
+        width: 476px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .labelunalinea{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: white;
+        font-weight: 500;
+        padding: 0px 0px 10px 0px;
+        margin-bottom: 10px;
+    }
+
+    .desplegableproyecto{
+        margin: auto;
+        padding: 10px;
+    }
+
+    .observaciones{
+        width: 454px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        background-color: #eeffd0;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .checkbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .checkboxCSS{
+        padding: 5px;
+        margin: 10px 0px 0px 5px;
+    }
+
+    .botonesenviar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width: $mq-tablet){
+
+    /*CAMBIO NAV*/
+
+    .navTexto {
+
+        .ulnavTexto {
+
+            justify-content: center;
+        }
+
+    }
+    
+    /*CAMBIOS EN INDEX*/
+
+    .contenedorGaleriaIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+
+    /*CAMBIO DE PORTADA VIDEO SOMOS EN NOSOTROS*/
+
+    .cajaportadavideosomos .portadavideosomos{
+        display: none;
+    }
+
+    .videoSomos{
+        display: block;
+        overflow: hidden;
+        margin: 10px 10px 30px 10px;
+    }
+    .grillanosotros{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+
+    .insertvideosomos{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+
+    /*CAMBIOS EN QUE HACEMOS*/
+
+    .parrafoSobreFondo{
+        height: 370px;
+        width: auto;
+        background-image: linear-gradient(to bottom right, #bad588, #4a5c28);
+    }
+
+    .textoQH1{
+        grid-area: parrafo1;
+    }
+
+    .textoQH2{
+        grid-area: parrafo2;
+    }
+
+    .textoQH3{
+        grid-area: parrafo3;
+    }
+
+    .textoQH4{
+        grid-area: parrafo4;
+    }
+
+    .imagenQH1{
+        grid-area: imagenpf2;
+    }
+
+    .imagenQH2{
+        grid-area: imagenpf3;
+    }
+
+    .imagenQH3{
+        grid-area: imagenpf4;
+    }
+
+    .foto1Parrafo, .foto2Parrafo{
+        display: block;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        border-radius: 5px;
+    }
+
+    .foto1Parrafo:hover{
+        transform: scale(1.2);
+        transition-property: all;
+        transition-duration: 500ms;
+    }
+
+    .foto2Parrafo:hover{
+        transform: scale(1.2);
+        transition-property: all;
+        transition-duration: 500ms;
+    }
+
+    .grillaquehacemos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "parrafo1 parrafo1"
+        "imagenpf2 parrafo2"
+        "parrafo3 imagenpf3"
+        "imagenpf4 parrafo4";
+    }
+
+    .imagenQH2{
+        height: 250px;
+        width: 100%;
+        background-color: #748651;
+    }
+
+    .textoQH3 .cajatexto1{
+        background-color: #748651;
+    }
+}
+
+@media (min-width: $mq-medio){
+
+    /*index*/
+
+    .imagenIndex{
+        border-radius: 10px;
+        filter: blur(0px);
+    }
+
+    .contenedorGaleriaIndex{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+
+
+    /*ESTILOS DE QUE HACEMOS*/
+
+    .foto1Parrafo, .foto2Parrafo{
+        width: 350px;
+        border-radius: 10px;
+    }
+
+    .imagenQH2{
+        height: 400px;
+        width: 100%;
+        background-color: #748651;
+    }
+
+    .textoQH3{
+        height: 400px;
+        background-image: linear-gradient(to bottom right, #bad588, #4a5c28);
+    }
+    
+    .cajatexto1{
+        height: 400px;
+    }
+
+    .h2queHacemos{
+        padding: 50px 10px 10px 10px;
+        
+    }
+
+    /*ESTILOS DE PROYECTOS*/
+
+    .grilla{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "titulovideos titulovideos"
+        "videos videos"
+        "titulofotos titulofotos"
+        "fotos fotos";
+    }
+
+    .galeriaproyectos{
+        color: #888;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        width: auto;
+
+    }
+
+}
