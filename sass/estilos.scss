@@ -10,7 +10,7 @@
 @import "footer";
 
 @mixin textobanner-arriba {
-    height: 175px;
+    height: 250px;
     font-weight: 800;
     text-align: right;
     font-size: 20pt;
@@ -18,6 +18,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
+    padding-right: 10%;
+    padding-top: 3.5em;
 }
 
 .portadaQueHacemos {
